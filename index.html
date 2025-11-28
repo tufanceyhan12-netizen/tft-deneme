@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TFT Yardımcı</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgba(20, 20, 30, 0.9);
+      color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      height: 100vh;
+      overflow-y: auto;
+      -webkit-app-region: drag;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #ffd700;
+    }
+
+    .close-btn {
+      background: #ff4757;
+      border: none;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      -webkit-app-region: no-drag;
+      transition: background-color 0.2s;
+    }
+
+    .close-btn:hover {
+      background: #ff6b81;
+    }
+
+    .strategy-btn {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      -webkit-app-region: no-drag;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .strategy-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    #content {
+      margin-top: 15px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      -webkit-app-region: no-drag;
+    }
+
+    #content:empty {
+      display: none;
+    }
+
+    .strategy-name {
+      font-size: 1.2rem;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #4ecdc4;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .unit-list, .augment-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .unit-tag, .augment-tag {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    .trait-info {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .trait-badge {
+      background: #764ba2;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .item-section {
+      margin-bottom: 10px;
+    }
+
+    .champion-items {
+      margin-bottom: 8px;
+    }
+
+    .champion-name {
+      color: #ffd700;
+      font-weight: bold;
+    }
+
+    .item-list {
+      margin-left: 15px;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    .guide-text {
+      background: rgba(78, 205, 196, 0.2);
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>TFT Yardımcı</h1>
+    <button class="close-btn" id="close-btn">×</button>
+  </div>
+  
+  <button class="strategy-btn" id="btn-ionia">Ionia Biçici Modu</button>
+  
+  <div id="content"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
