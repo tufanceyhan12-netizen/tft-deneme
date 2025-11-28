@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Ionia Biçici (Ionia Slayer)",
+    "core_units": ["Zed", "Shen", "Irelia", "Sett", "Yasuo", "Xayah"],
+    "traits": { "Ionia": 6, "Slayer": 4 },
+    "priority_items": {
+      "Zed": ["Infinity Edge", "Hand of Justice", "Edge of Night"],
+      "Shen": ["Sunfire Cape", "Redemption", "Ionic Spark"],
+      "Xayah": ["Giant Slayer", "Last Whisper", "Guinsoo's Rageblade"]
+    },
+    "recommended_augments": ["Ionia Crest", "Slayer Crown", "Healing Orbs"],
+    "early_game_guide": "3 Ionia ile başla, Jhin taşıyıcı.",
+    "when_to_play": "Erken Ionia amblemi veya çok Zed gelirse."
+  }
+]
